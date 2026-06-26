@@ -1,0 +1,81 @@
+export default function PrivacyPolicy() {
+    return (
+        <main style={{ flex: 1, padding: "24px", maxWidth: "720px" }}>
+            <h1>Politique de confidentialité</h1>
+            <p className="muted" style={{ marginBottom: "24px" }}>
+                Dernière mise à jour : juin 2026
+            </p>
+
+            <h2>1. Collecte de données</h2>
+            <p>L'extension Modeo collecte uniquement les données nécessaires à son fonctionnement :</p>
+            <ul>
+                <li>
+                    <strong>Activité utilisateur</strong> : les clics et interactions sur les pages web, uniquement
+                    lorsqu'un enregistrement est explicitement déclenché par l'utilisateur.
+                </li>
+                <li>
+                    <strong>Contenu de pages web</strong> : des captures d'écran des pages visitées, uniquement lors de
+                    l'enregistrement d'un mode opératoire.
+                </li>
+            </ul>
+
+            <h2>2. Utilisation des données</h2>
+            <p>
+                Les données collectées sont utilisées exclusivement pour créer et rejouer des modes opératoires pas à
+                pas. Elles ne sont ni analysées, ni utilisées à des fins publicitaires ou statistiques.
+            </p>
+
+            <h2>3. Stockage</h2>
+            <p>
+                Toutes les données (modes opératoires, captures, préférences) sont stockées{" "}
+                <strong>localement sur l'appareil de l'utilisateur</strong>, dans l'IndexedDB de l'extension Chrome.
+                Aucune donnée n'est transmise à un serveur externe.
+            </p>
+
+            <h2>4. Partage des données</h2>
+            <p>
+                Modeo ne partage, ne vend et ne transmet aucune donnée à des tiers. L'extension ne contient aucun outil
+                de tracking, publicité ou analytique tiers.
+            </p>
+
+            <h2>5. Permissions</h2>
+            <p>Les permissions utilisées par l'extension ont les finalités suivantes :</p>
+            <ul>
+                <li>
+                    <strong>storage</strong> : sauvegarder les préférences utilisateur et l'état de session.
+                </li>
+                <li>
+                    <strong>activeTab</strong> : accéder à l'onglet actif pour capturer des interactions lors d'un
+                    enregistrement.
+                </li>
+                <li>
+                    <strong>scripting</strong> : injecter le script de contenu pour l'enregistrement et la lecture
+                    guidée.
+                </li>
+                <li>
+                    <strong>tabs</strong> : détecter les navigations en cours d'enregistrement.
+                </li>
+                <li>
+                    <strong>sidePanel</strong> : afficher l'interface de configuration dans le panneau latéral de
+                    Chrome.
+                </li>
+                <li>
+                    <strong>Accès à tous les sites</strong> : permettre l'enregistrement et la lecture sur n'importe
+                    quelle page web, la destination des modes opératoires n'étant pas connue à l'avance.
+                </li>
+            </ul>
+
+            <h2>6. Droits des utilisateurs</h2>
+            <p>
+                L'utilisateur peut supprimer à tout moment ses modes opératoires depuis l'interface Modeo. La
+                désinstallation de l'extension supprime l'intégralité des données stockées localement.
+            </p>
+
+            <h2>7. Contact</h2>
+            <p>
+                Pour toute question relative à cette politique de confidentialité, vous pouvez nous contacter à
+                l'adresse : <a href="mailto:dsicnpp@outlook.com">dsicnpp@outlook.com</a>
+            </p>
+        </main>
+    );
+}

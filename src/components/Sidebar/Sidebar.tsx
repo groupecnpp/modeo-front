@@ -15,7 +15,7 @@ const NAV: NavItem[] = [
     {
         id: "drafts",
         label: "Brouillons",
-        href: "/drafts",
+        href: "/modeo-front/drafts",
         icon: <RiDraftLine />,
     },
     // { id: "sites", label: "Sites", href: "/sites" },
@@ -49,7 +49,11 @@ export default function Sidebar() {
                 </ul>
             </nav>
 
-            <div className="mo-sidebar__footer">{/* <button className="btn btn--ghost">Se déconnecter</button> */}</div>
+            <div className="mo-sidebar__footer">
+                <a className="mo-sidebar__privacy" href="/modeo-front/privacy">
+                    Politique de confidentialité
+                </a>
+            </div>
         </aside>
     );
 }

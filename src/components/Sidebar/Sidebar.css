@@ -75,6 +75,17 @@
     padding-top: var(--space-3);
 }
 
+.mo-sidebar__privacy {
+    font-size: 0.75rem;
+    color: var(--color-muted);
+    text-decoration: none;
+}
+
+.mo-sidebar__privacy:hover {
+    color: var(--color-text);
+    text-decoration: underline;
+}
+
 @media (max-width: 640px) {
     .mo-sidebar {
         position: relative;

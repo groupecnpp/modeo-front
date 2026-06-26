@@ -1,0 +1,79 @@
+.mo-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--radius-md);
+    border: 1px solid transparent;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+        background var(--trans-fast),
+        box-shadow var(--trans-fast),
+        transform var(--trans-fast);
+}
+
+.mo-btn:active {
+    transform: translateY(1px);
+}
+.mo-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Sizes */
+.mo-btn--sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.85rem;
+}
+.mo-btn--md {
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+}
+.mo-btn--lg {
+    padding: 0.75rem 1rem;
+    font-size: 1.05rem;
+}
+
+/* Variants */
+.mo-btn--primary {
+    background: var(--color-primary);
+    color: white;
+    box-shadow: var(--shadow-sm);
+    border-color: transparent;
+}
+.mo-btn--primary:hover {
+    background: var(--color-primary-600);
+}
+
+.mo-btn--secondary {
+    background: transparent;
+    color: var(--color-text);
+    border-color: var(--color-border);
+}
+.mo-btn--secondary:hover {
+    background: var(--color-primary-100);
+    color: var(--color-primary);
+}
+
+.mo-btn--ghost {
+    background: transparent;
+    border-color: transparent;
+    color: var(--color-text);
+}
+
+.mo-btn--danger {
+    background: var(--color-danger);
+    color: white;
+    border-color: transparent;
+}
+.mo-btn--danger:hover {
+    background: var(--color-danger-600);
+}
+
+.mo-btn__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,171 @@
+/* variables.css
+	 Global design tokens for Modeo V2
+*/
+:root {
+    /* Colors */
+    --color-bg: #f7f8fa;
+    --color-surface: #ffffff;
+    --color-text: #0f1724;
+    --color-muted: #6b7280;
+    --color-muted-2: #a7a7a7;
+    --color-primary: #0b67ff;
+    --color-primary-600: #0053d1;
+    --color-primary-100: #e8f0ff;
+    --color-success: #16a34a;
+    --color-danger: #ef4444;
+    --color-danger-600: #b91c1c;
+    --color-danger-100: #fee2e2;
+    --color-warning: #f59e0b;
+    --color-border: #e6e7ea;
+    --color-shadow: rgba(15, 23, 42, 0.06);
+
+    /* Typography */
+    --font-sans: "Roboto", Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
+    --font-size-base: 16px;
+    --line-height-base: 1.5;
+
+    /* Radii */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+
+    /* Spacing scale */
+    --space-0: 0px;
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 24px;
+    --space-6: 32px;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px var(--color-shadow);
+    --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.08);
+
+    /* Z indices */
+    --z-overlay: 9998;
+    --z-panel: 9999;
+
+    /* Transitions */
+    --trans-fast: 120ms;
+    --trans-base: 240ms;
+
+    /* Layout */
+    --max-content-width: 1100px;
+    --panel-width: 320px;
+}
+
+/* Dark theme variables */
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Colors */
+        --color-bg: #0b1220;
+        --color-surface: #18202e;
+        --color-text: #e6eef8;
+        --color-muted: #9ca3af;
+        --color-muted-2: #6b7280;
+        --color-primary: #3b82f6;
+        --color-primary-600: #2563eb;
+        --color-primary-100: #0b2a66;
+        --color-success: #16a34a;
+        --color-danger: #ef4444;
+        --color-danger-600: #b91c1c;
+        --color-danger-100: #3b0b0b;
+        --color-warning: #f59e0b;
+        --color-border: #1f2937;
+        --color-shadow: rgba(2, 6, 23, 0.6);
+
+        /* Typography */
+        --font-sans: "Roboto", Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial;
+        --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
+        --font-size-base: 16px;
+        --line-height-base: 1.5;
+
+        /* Radii */
+        --radius-sm: 4px;
+        --radius-md: 8px;
+        --radius-lg: 12px;
+
+        /* Spacing scale */
+        --space-0: 0px;
+        --space-1: 4px;
+        --space-2: 8px;
+        --space-3: 12px;
+        --space-4: 16px;
+        --space-5: 24px;
+        --space-6: 32px;
+
+        /* Shadows */
+        --shadow-sm: 0 1px 2px var(--color-shadow);
+        --shadow-md: 0 8px 24px rgba(2, 6, 23, 0.56);
+
+        /* Z indices */
+        --z-overlay: 9998;
+        --z-panel: 9999;
+
+        /* Transitions */
+        --trans-fast: 120ms;
+        --trans-base: 240ms;
+
+        /* Layout */
+        --max-content-width: 1100px;
+        --panel-width: 320px;
+    }
+}
+
+/* Optional explicit data-theme attribute support */
+[data-theme="dark"] {
+    /* Colors */
+    --color-bg: #0b1220;
+    --color-surface: #18202e;
+    --color-text: #e6eef8;
+    --color-muted: #9ca3af;
+    --color-muted-2: #6b7280;
+    --color-primary: #3b82f6;
+    --color-primary-600: #2563eb;
+    --color-primary-100: #0b2a66;
+    --color-success: #16a34a;
+    --color-danger: #ef4444;
+    --color-danger-600: #b91c1c;
+    --color-danger-100: #3b0b0b;
+    --color-warning: #f59e0b;
+    --color-border: #1f2937;
+    --color-shadow: rgba(2, 6, 23, 0.6);
+
+    /* Typography */
+    --font-sans: "Roboto", Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
+    --font-size-base: 16px;
+    --line-height-base: 1.5;
+
+    /* Radii */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+
+    /* Spacing scale */
+    --space-0: 0px;
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 24px;
+    --space-6: 32px;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px var(--color-shadow);
+    --shadow-md: 0 8px 24px rgba(2, 6, 23, 0.56);
+
+    /* Z indices */
+    --z-overlay: 9998;
+    --z-panel: 9999;
+
+    /* Transitions */
+    --trans-fast: 120ms;
+    --trans-base: 240ms;
+
+    /* Layout */
+    --max-content-width: 1100px;
+    --panel-width: 320px;
+}

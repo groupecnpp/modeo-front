@@ -1,0 +1,133 @@
+.mo-version-warning-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    padding: 16px;
+}
+
+.mo-version-warning-modal {
+    background: var(--surface, #fff);
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    max-width: 480px;
+    width: 100%;
+    overflow: hidden;
+    animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mo-version-warning-header {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    color: white;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.mo-version-warning-icon {
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.mo-version-warning-header h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.mo-version-warning-content {
+    padding: 24px;
+}
+
+.mo-version-warning-content p {
+    margin: 0 0 16px 0;
+    color: var(--text, #111);
+    line-height: 1.5;
+}
+
+.mo-version-warning-content p:last-of-type {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.mo-version-warning-info {
+    background: #f3f4f6;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    border-left: 4px solid #f59e0b;
+}
+
+.mo-version-warning-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.mo-version-warning-item:not(:last-child) {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.mo-version-warning-label {
+    font-weight: 500;
+    color: #374151;
+    font-size: 0.9rem;
+}
+
+.mo-version-warning-value {
+    font-family: monospace;
+    color: #111;
+    font-weight: 600;
+    background: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.mo-version-warning-footer {
+    padding: 16px 24px;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.mo-version-warning-dismiss {
+    padding: 10px 24px;
+    border: none;
+    background: var(--primary, #3b82f6);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.mo-version-warning-dismiss:hover {
+    background: #2563eb;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+}
+
+.mo-version-warning-dismiss:active {
+    transform: translateY(0);
+}

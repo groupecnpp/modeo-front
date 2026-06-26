@@ -10,7 +10,7 @@ import NotFound from "./pages/NotFound/NotFound.tsx";
 
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
-        <BrowserRouter>
+        <BrowserRouter basename="/modeo-front">
             <Routes>
                 <Route path="/" element={<App />}>
                     <Route index element={<Home />} />
